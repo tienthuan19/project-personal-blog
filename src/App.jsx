@@ -331,7 +331,7 @@ const PostDetailMobile = ({ post, onBack }) => {
                             >
                                 {/* Tiêu đề: Font chữ nét hơn, màu trắng tinh khiết */}
                                 <span className="text-white text-[15px] font-bold truncate tracking-wide drop-shadow-sm">
-                                    {post.title}
+                                    Tác Giả: {userData.name}
                                 </span>
                             </div>
                         </div>
