@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Code custom cho giao diện iPhone */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+@supports (padding-top: env(safe-area-inset-top)) {
+    .pt-safe-top { padding-top: env(safe-area-inset-top); }
+    .pb-safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+    .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
+}
