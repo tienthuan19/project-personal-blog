@@ -189,7 +189,7 @@ const MobileBlogCard = ({ data, onClick }) => {
             {/* 1. IMAGE AREA: Hình ảnh làm chủ đạo, bo góc lớn */}
             <div className="relative w-full">
                 {data.images.length > 0 ? (
-                    <div className="overflow-x-auto flex gap-3 scrollbar-hide snap-x rounded-[1.5rem] shadow-sm">
+                    <div className="overflow-x-auto flex gap-3 scrollbar-hide snap-x snap-mandatory rounded-[1.5rem] shadow-sm">
                         {data.images.map((img, idx) => (
                             <div key={idx} className="relative shrink-0 w-full aspect-[4/3] snap-center">
                                 <img
