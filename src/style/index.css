@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Ẩn thanh cuộn cho phần Stories */
+/* Code custom cho giao diện iPhone */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
@@ -10,16 +10,8 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
-
-/* Hỗ trợ tai thỏ iPhone (Safe Area) */
 @supports (padding-top: env(safe-area-inset-top)) {
-    .pt-safe-top {
-        padding-top: env(safe-area-inset-top);
-    }
-    .pb-safe-bottom {
-        padding-bottom: env(safe-area-inset-bottom);
-    }
-    .pb-safe {
-        padding-bottom: env(safe-area-inset-bottom);
-    }
+    .pt-safe-top { padding-top: env(safe-area-inset-top); }
+    .pb-safe-bottom { padding-bottom: env(safe-area-inset-bottom); }
+    .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
 }
